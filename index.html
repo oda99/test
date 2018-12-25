@@ -9,8 +9,8 @@
     <meta http-equiv="Expires" content="0">
     <link rel="icon" href="favicon.ico">
     <title>KekkonUketsuke(2019-02-09)</title>
-    <link href="./app.js" rel="preload" as="script">
-    <link href="./app.css" rel="stylesheet" media="screen" />
+    <!<link href="./app.js" rel="preload" as="script">
+    <link rel="stylesheet" type="text/css" href="renshu.css">
 
 </head>
 <body>
@@ -21,37 +21,66 @@
     <div id="app">
         <div class="home">
 
-          <h1 class="msr_h102">結婚式アフターパーティ</h1>
-          <h2 class="msr_h202">出欠確認フォーム</h2>
+          <h1 class="msr_h102">Wedding invitation</h1>
+          <h2 class="msr_h202">ささやかながら披露宴後、二次会を催します。是非ともご参加いただけますようお願い致します。</h2>
 
-            <p class="text-danger"></p>
             <p>
-                メールアドレス
-            <br>
-                <input type="email" id="email" />
+              日時：2019年2月9日（土）18：00〜
             </p>
+
             <p>
-                氏名
-            <br>
+              会場：ホテル日航熊本 2F 「アソシェッド」電話：096-211-1661
+            </p>
+
+            <p>
+              会費：5,000円(仮)
+            </p>
+
+            <p>
+              服装：ちょっとだけお洒落に！
+            </p>
+
+            <p>
+              締め切り：2019/02/09 (仮) なお返信が1番早かった方には豪華プレゼントがあるとかないとか
+            </p>
+
+            <p>
+              備考：受付でお待たせしないよう事前決済をお願いします。出席/魂参加にチェックを入れて送信されると送金フォームへ遷移します。
+            </p>
+
+            <p>
+                ご芳名
                 <input type="text" id="kanjiname" />
             </p>
+
             <p>
-                ふりがな
-            <br>
-                <input type="text" id="kananame" />
+                メールアドレス
+                <input type="email" id="email" />
             </p>
+
             <p>
-                <input type="checkbox" id="tamashii" />
-                魂参加(当日参加できないけどお祝いするよ！という人向け。お祝い金も送れます。)
+                携帯電話
+                <input type="tel" id="tel" />
             </p>
+
+            <form action="#" method="post">
+              <p>
+                <input type="radio" name="sanka" value="syusseki" checked="checked" />出席
+                <input type="radio" name="sanka" value="kesseki" />欠席
+                <input type="radio" name="sanka" value="tamashii" />魂参加(当日参加出来ないけどお祝いするよ！って人向け。お祝い金が送れます。）
+              </p>
+            </form>
+
             <p>
                 お祝いのメッセージ
-            <br>
                 <textarea id="comment"></textarea>
             </p>
+
             <p>
                 <button onclick="send()">送信＆おめでとう！</button>
             </p>
+
+            <p>関東近郊の方は3月9日に東京版を開催しますのでそちらにご参加ください！</p>
 
         </div>
     </div>
