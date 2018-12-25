@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow" />
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="icon" href="favicon.ico">
+    <title>KekkonUketsuke(2019-02-09)</title>
+    <link href="./app.js" rel="preload" as="script">
+    <link href="./app.css" rel="stylesheet" media="screen" />
+
+</head>
+<body>
+    <noscript>
+        <strong>JavaScriptを有効にしていないとこのページは表示されません。</strong>
+    </noscript>
+
+    <div id="app">
+        <div class="home">
+
+          <h1 class="msr_h102">結婚式アフターパーティ</h1>
+          <h2 class="msr_h202">出欠確認フォーム</h2>
+
+            <p class="text-danger"></p>
+            <p>
+                メールアドレス
+            <br>
+                <input type="email" id="email" />
+            </p>
+            <p>
+                氏名
+            <br>
+                <input type="text" id="kanjiname" />
+            </p>
+            <p>
+                ふりがな
+            <br>
+                <input type="text" id="kananame" />
+            </p>
+            <p>
+                <input type="checkbox" id="tamashii" />
+                魂参加(当日参加できないけどお祝いするよ！という人向け。お祝い金も送れます。)
+            </p>
+            <p>
+                お祝いのメッセージ
+            <br>
+                <textarea id="comment"></textarea>
+            </p>
+            <p>
+                <button onclick="send()">送信＆おめでとう！</button>
+            </p>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
